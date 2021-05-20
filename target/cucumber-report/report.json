@@ -1,0 +1,138 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 5,
+        "name": "Search results contains \u0027www.open.ru\u0027",
+        "description": "",
+        "id": "check--www.open.ru--in-search-results;search-results-contains--www.open.ru-",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 7873837110,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "go to \u0027https://www.google.com/\u0027",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\u0027https://www.google.com/\u0027",
+                  "offset": 6
+                }
+              ],
+              "location": "StepDefs.go_to(String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 4685613498,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "search \u0027Открытие\u0027",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\u0027Открытие\u0027",
+                  "offset": 7
+                }
+              ],
+              "location": "StepDefs.search(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 594015034,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "search results contains \u0027www.open.ru\u0027",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\u0027www.open.ru\u0027",
+                  "offset": 24
+                }
+              ],
+              "location": "StepDefs.search_results_contains(String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@open"
+          }
+        ]
+      }
+    ],
+    "name": "Check \u0027www.open.ru\u0027 in search results",
+    "description": "  Check that search results contains \u0027www.open.ru\u0027",
+    "id": "check--www.open.ru--in-search-results",
+    "keyword": "Feature",
+    "uri": "file:src/test/java/features/checkOpenInResults.feature",
+    "tags": []
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 5,
+        "name": "Sell rate is bigger than buy rate",
+        "description": "",
+        "id": "check-exchange-rate-on-the--www.open.ru-;sell-rate-is-bigger-than-buy-rate",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 18934669542,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "go to \u0027https://www.open.ru/\u0027",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\u0027https://www.open.ru/\u0027",
+                  "offset": 6
+                }
+              ],
+              "location": "StepDefs.go_to(String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 6857095179,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "check sell rate is bigger than buy rate",
+            "match": {
+              "location": "StepDefs.checkSellRateIsBiggerThanBuyRate()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@checkRate"
+          }
+        ]
+      }
+    ],
+    "name": "Check exchange rate on the \u0027www.open.ru\u0027",
+    "description": "  Check that sell rate is bigger than buy rate",
+    "id": "check-exchange-rate-on-the--www.open.ru-",
+    "keyword": "Feature",
+    "uri": "file:src/test/java/features/checkRateExchange.feature",
+    "tags": []
+  }
+]
